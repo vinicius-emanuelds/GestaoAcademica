@@ -55,11 +55,8 @@ O sistema implementa uma **API RESTful completa** para a gestão escolar, cobrin
 ### 1. Clonar o Repositório
 
 ```sh
-git clone https://github.com/seu-usuario/siga.git
-
-cd siga
+git clone https://github.com/vinicius-emanuelds/GestaoAcademica.git
 ```
-
 
 ### 2. Rodar a Aplicação
 
@@ -150,3 +147,162 @@ com.poo.siga
 
 9. Mesma ideia para `Disciplinas` e outros. Sendo assim intuitivo e similar em simplicidade.    
 ![IMAGEM NOVA DISCIPLINA](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.04.35.png)
+
+
+# 📖 Manual do Usuário - SIGA
+
+Bem-vindo ao **SIGA (Sistema Integrado de Gestão Acadêmica)**.  
+Este manual guiará você pelas principais funcionalidades do sistema, desde o cadastro básico até o lançamento de notas.
+
+---
+
+## 1. Acesso ao Sistema
+
+Abra seu navegador de preferência (Chrome, Firefox, Edge) e digite o endereço:
+
+🔗 **http://localhost:8080**
+
+Você verá a **Página Inicial (Dashboard)**, que serve como menu principal para todas as funcionalidades.
+
+---
+
+## 2. Fluxo de Cadastro Sugerido
+
+Para garantir a integridade dos dados, recomendamos seguir a seguinte ordem de cadastros:
+
+1. **Professores** – (Quem ensina?)  
+2. **Disciplinas** – (O que é ensinado?)  
+3. **Turmas** – (Onde e quando é ensinado?)  
+4. **Alunos** – (Quem estuda?)  
+5. **Notas** – (Avaliação do desempenho)  
+
+---
+
+## 3. Gerenciando Professores
+
+Acesse o menu **Professores** na barra de navegação.
+
+### 3.1. Cadastrar Novo Professor
+
+1. Clique no botão **"Novo Professor"**.  
+2. Preencha o formulário com:
+
+   - **Nome:** Nome completo  
+   - **Email:** Endereço de contato (ex: prof.carlos@escola.com)  
+   - **CPF:** Documento válido  
+
+3. Clique em **Salvar**.  
+O novo professor aparecerá na listagem.
+
+### 3.2. Editar ou Excluir
+
+- **Editar:** Clique no ícone de lápis ao lado do nome.  
+- **Excluir:** Clique no ícone de lixeira.  
+
+⚠ **Atenção:** Professores vinculados a turmas ativas não podem ser excluídos.
+
+---
+
+## 4. Gerenciando Disciplinas
+
+Acesse o menu **Disciplinas**.
+
+### 4.1. Criar Disciplina
+
+1. Clique em **"Nova Disciplina"**.  
+2. Informe:
+
+   - **Descrição:** Nome da matéria (ex: Matemática Básica)  
+   - **Código:** Sigla interna (ex: MAT-101)  
+   - **Créditos:** Carga horária ou peso (ex: 4)  
+
+3. Confirme a operação.
+
+---
+
+## 5. Gerenciando Turmas
+
+Acesse o menu **Turmas**.  
+Esta etapa conecta professores e disciplinas.
+
+### 5.1. Abrir Turma
+
+1. Clique em **"Nova Turma"**.  
+2. Selecione:
+
+   - **Semestre:** (ex: 2024-1)  
+   - **Professor:** Um professor já cadastrado  
+   - **Disciplina:** A matéria desejada  
+
+3. Salve.  
+A nova turma estará disponível para receber alunos.
+
+---
+
+## 6. Gerenciando Alunos
+
+Acesse o menu **Alunos**.
+
+### 6.1. Matricular Novo Aluno
+
+1. Clique em **"Novo Aluno"**.  
+2. Preencha:
+
+   - Nome  
+   - Email  
+   - CPF  
+   - Número de Matrícula (ex: 20240001)
+
+3. Salve o registro.
+
+### 6.2. Histórico Escolar
+
+Na lista de alunos, clique em **Detalhes/Histórico** (quando disponível)  
+ou gere o relatório via API.
+
+---
+
+## 7. Lançamento de Notas
+
+Acesse o menu **Notas** na barra lateral.  
+Esta tela é utilizada para registrar o desempenho dos alunos nas avaliações.
+
+### 7.1. Registrar P1, P2 e P3
+
+1. Localize o aluno e a turma na listagem.  
+2. Clique em **"Lançar Notas"**.  
+3. Preencha:
+
+   - **P1:** Nota da primeira prova (0–10)  
+   - **P2:** Nota da segunda prova (0–10)  
+   - **P3:** Nota opcional ou conforme regra da escola  
+
+4. Clique em **Salvar/Atualizar**.
+
+O sistema calculará automaticamente a **Média** e atualizará o **Status** (Aprovado/Reprovado).
+
+---
+
+## 8. Solução de Problemas Comuns
+
+### ❌ Erro ao Excluir
+Verifique se o item (Professor ou Disciplina) não está vinculado a uma Turma ou Matrícula.
+
+### ⚠ Sistema não carrega
+Confirme se o backend está rodando e se a porta **8080** está livre.
+
+### 📁 Dados sumiram
+Verifique se o arquivo `sigaDB.mv.db` está presente na pasta **dados/** do projeto.
+
+---
+
+## 👨‍💻 Suporte Técnico
+
+Para dúvidas avançadas, entre em contato com a equipe de desenvolvimento:
+
+- **Marcelo Manara**  
+- **Marcelo Belloto**  
+- **Vinícius Emanuel**  
+- **Lucas Vieira**
+
+---
