@@ -35,10 +35,10 @@ O sistema implementa uma **API RESTful completa** para a gestão escolar, cobrin
 
 ## 👥 Equipe de Desenvolvimento
 
-- Marcelo Manara  
-- Marcelo Belloto  
-- Vinícius Emanuel  
-- Lucas Vieira  
+- [Lucas Vieira](https://github.com/Lucas-WBB) 
+- [Marcelo Belloto](https://github.com/marcelo-belotto) 
+- [Marcelo Manara](https://github.com/ManaraMarcelo)
+- [Vinícius Emanuel](https://github.com/vinicius-emanuelds) 
 
 ---
 
