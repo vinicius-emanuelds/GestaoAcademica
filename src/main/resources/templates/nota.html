@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout :: layout(content=~{::content}, pageTitle=${pageTitle})}">
+
+<body>
+    <div th:fragment="content">
+        <div class="card shadow-sm border-0 mt-4 p-3">
+
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <label class="form-label">Selecione a Turma</label>
+                    <select class="form-select" id="selectTurma">
+                        <option value="">Selecione a Turma</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Selecione a Disciplina</label>
+                    <select class="form-select" id="selectDisciplina">
+                        <option value="">Selecione uma Disciplina</option>
+                    </select>
+                </div>
+
+                <div class="col-md-1 d-flex align-items-end">
+                    <button class="btn btn-primary w-100 text-nowrap" onclick="buscarMatriculas()">Buscar</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="msgAlerta" role="alert">
+        </div>
+        <!-- Tabela -->
+        <div class="card shadow-sm border-0 mt-4">
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>RA</th>
+                            <th>Nome do Aluno</th>
+                            <th>Disciplina</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Média</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaNotasDisciplina">
+
+                    </tbody>
+
+                </table>
+            </div>
+
+            <!-- Botões -->
+            <div class="d-flex justify-content-end p-3 gap-2 border-top">
+                <!-- <button class="btn btn-primary">Salvar Alterações</button> -->
+                <button class="btn btn-secondary" onclick="window.location.reload()">Cancelar</button>
+            </div>
+        </div>
+
+        <script src="/js/nota.js"></script>
+    </div>
+</body>
+
+</html>

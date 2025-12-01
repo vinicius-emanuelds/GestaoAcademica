@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout :: layout(content=~{::content}, pageTitle=${pageTitle})}">
+
+<body>
+    <div th:fragment="content">
+        <div class="container-fluid p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="input-group" style="max-width: 400px;">
+                    <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Buscar turma...">
+                </div>
+
+                <div class="d-flex gap-2">
+                    <select class="form-select">
+                        <option>Todas as Turmas</option>
+                    </select>
+
+                    <button class="btn btn-primary text-nowrap" onclick="abrirModalNovaTurma()">
+                        <i class="bi bi-plus-lg me-2">
+                        </i>Nova Turma
+                    </button>
+                </div>
+            </div>
+            <div class="row g-4" id="cards_turmas">
+
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Carregando...</span>
+                </div>
+
+            </div>
+        </div>
+        <div th:replace="~{fragments/modalTurma :: modalTurma}"></div>
+        <div th:replace="~{fragments/modalDetalhesDaTurma :: modalDetalhesTurma}"></div>
+        <div th:replace="~{fragments/modalAdicionarAlunoTurma :: modalAdicionarAlunoTurma}"></div>
+        <script src="/js/turma.js"></script>
+    </div>
+</body>
+
+</html>

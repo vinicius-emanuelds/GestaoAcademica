@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org" th:fragment="layout (content, pageTitle)">
+
+<head th:replace="~{fragments/header :: header(${pageTitle})}"></head>
+
+<body>
+
+<div class="d-flex">
+
+    <!-- Sidebar -->
+    <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+    <div class="flex-fill">
+
+        <!-- Topbar -->
+        <div th:replace="~{fragments/topbar :: topbar}"></div>
+        
+        <!-- Conteúdo Principal -->
+        <main class="p-4">
+            <div th:replace="${content}"></div>
+        </main>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout :: layout(content=~{::content}, pageTitle=${pageTitle})}">
+
+<body>
+    <div th:fragment="content">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="input-group" style="max-width: 400px;">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="Buscar disciplina...">
+            </div>
+
+            <div class="d-flex gap-3">
+                <select class="form-select">
+                    <option>Todas Disciplinas</option>
+                </select>
+
+                <button class="btn btn-primary text-nowrap" onclick="abrirModalNovaDisciplina()">
+                    <i class="bi bi-plus-lg me-1" >
+                    </i>Nova Disciplina
+                </button>
+            </div>
+        </div>
+        <!-- Tabela -->
+        <div class="card shadow-sm border-0 table-custom">
+            <table class="table mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Carga Horária</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaDisciplinas">
+                    <tr>
+                        <td colspan="5" class="text-center py-4">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Carregando...</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div th:replace="~{fragments/modalDisciplina :: modalDisciplina}"></div>
+        <script src="/js/disciplina.js"></script>
+    </div>
+</body>
+
+</html>

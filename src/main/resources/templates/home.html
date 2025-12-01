@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout :: layout(content=~{::content}, pageTitle=${pageTitle})}">
+
+<body>
+    <div th:fragment="content">
+        <div class="row g-3 mb-4">
+            <div class="col-md-3">
+                <div class="card p-3 shadow-sm">
+                    <small>Total de Alunos</small>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold" id="totalAlunos">0</h3>
+                        <div class="card-icon"><i class="bi bi-people"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 shadow-sm">
+                    <small>Total de Professores</small>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold" id="totalProfessores">0</h3>
+                        <div class="card-icon"><i class="bi bi-mortarboard"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 shadow-sm">
+                    <small>Turmas Ativas</small>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold" id="totalTurmas">0</h3>
+                        <div class="card-icon"><i class="bi bi-building"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 shadow-sm">
+                    <small>Disciplinas</small>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold" id="totalDisciplinas">0</h3>
+                        <div class="card-icon"><i class="bi bi-journal-bookmark"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GRÁFICOS + ATIVIDADES -->
+        <div class="row g-4">
+
+            <!-- GRÁFICO 1 -->
+            <div class="col-md-8">
+                <div class="card p-3 shadow-sm">
+                    <h5>Média de Notas por Turma</h5>
+                    <canvas id="graficoNotas"></canvas>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="/js/home.js"></script>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{layout :: layout(content=~{::content}, pageTitle=${pageTitle})}">
+
+<body>
+    <div th:fragment="content">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="input-group" style="max-width: 400px;">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="Buscar professor...">
+            </div>
+
+            <div class="d-flex gap-2">
+                <select class="form-select">
+                    <option>Todas Disciplinas</option>
+                    <!-- Carregamento Via Javascript API Disciplinas -->
+                </select>
+
+                <select class="form-select">
+                    <option>Status: Todos</option>
+                    <option>Ativo</option>
+                    <option>Inativo</option>
+                </select>
+
+                <button class="btn btn-primary text-nowrap" onclick="abrirModalNovoProfessor()">
+                    <i class="bi bi-plus-lg me-2" >
+                    </i>Novo Professor
+                </button>
+            </div>
+        </div>
+
+        <!-- TABELA -->
+        <div class="card shadow-sm">
+            <div class="card-body p-0">
+                <table class="table align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Foto</th>
+                            <th>Nome</th>
+                            <th>Disciplinas</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th class="text-center">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaProfessores">
+                        <tr>
+                            <td colspan="7" class="text-center py-4">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Carregando...</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div th:replace="~{fragments/modalProfessor :: modalProfessor}"></div>
+        <script src="/js/professor.js"></script>
+    </div>
+</body>
+
+</html>
