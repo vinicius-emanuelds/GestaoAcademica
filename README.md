@@ -252,7 +252,7 @@ Esta tela é utilizada para registrar o desempenho dos alunos nas avaliações.
 
    - **P1:** Nota da primeira prova (0–10)  
    - **P2:** Nota da segunda prova (0–10)  
-   - **P3:** Nota opcional ou conforme regra da escola  
+   - **P3:** Nota da terceira prova ou atividade extra (0–10)  
 
 4. Clique em **Salvar/Atualizar**.
 
