@@ -276,29 +276,29 @@ Verifique se o arquivo `sigaDB.mv.db` está presente na pasta **dados/** do proj
 # 📂 Exemplo de Cadastro de Novo Aluno
 
 1. Na nossa página inicial, escolhemos ao lado esquerdo a opção `Alunos`.  
-![IMAGEM HOME PAGE](imgs\aluno.png)
+![IMAGEM HOME PAGE](imgs/aluno.png)
 
 2. Dentro da página de Alunos, escolhemos ao canto sinalizado em vermelho para adicionar um novo aluno.   
-![IMAGEM HOME ALUNOS](imgs\novo-aluno.png)
+![IMAGEM HOME ALUNOS](imgs/novo-aluno.png)
 
 3. No modal exibido, inserimos os dados pessoais do novo aluno para a adição.  
-![IMAGEM ADD ALUNOS](imgs\novo-aluno-info.png)
+![IMAGEM ADD ALUNOS](imgs/novo-aluno-info.png)
 
 4. Ao inserir corretamente os dados, uma mensagem de sucesso será exibida e seu novo aluno estará disponível na listagem de alunos.  
-![IMAGEM ](imgs\aluno-sucesso.png)
+![IMAGEM ](imgs/aluno-sucesso.png)
 
 5. Em amarelo vemos o novo aluno inserido.
-![IMAGEM NOVO ALUNO LISTA](imgs\lista-aluno.jpg)
+![IMAGEM NOVO ALUNO LISTA](imgs/lista-aluno.jpg)
 
 6. Para a adição de outros campos, o sistema é muito parecido mudando apenas os dados para a adição.
 7. Para Professores por exemplo, vamos na aba `Professores` sinalizado em vermelho.  
-![IMAGEM ](imgs\professor.png)
+![IMAGEM ](imgs/professor.png)
 
 8. Inserimos os dados e adicionamos.  
-![IMAGEM NOVO PROFESSOR](imgs\novo-professor.png)
+![IMAGEM NOVO PROFESSOR](imgs/novo-professor.png)
 
 9. Mesma ideia para `Disciplinas` e outros. Sendo assim intuitivo e similar em simplicidade.    
-![IMAGEM NOVA DISCIPLINA](imgs\nova-disciplina.png)
+![IMAGEM NOVA DISCIPLINA](imgs/nova-disciplina.png)
 
 ## 👨‍💻 Suporte Técnico
 
