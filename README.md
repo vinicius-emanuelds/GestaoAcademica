@@ -130,32 +130,6 @@ com.poo.siga
 └── SigaApplication.java
 ```
 
-# 📂 Exemplo de Cadastro de Novo Aluno
-
-1. Na nossa página inicial, escolhemos ao lado esquerdo a opção `Alunos`.  
-![IMAGEM HOME PAGE](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.09.25.png)
-
-2. Dentro da página de Alunos, escolhemos ao canto sinalizado em vermelho para adicionar um novo aluno.   
-![IMAGEM HOME ALUNOS](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.01.52.png)
-
-3. No modal exibido, inserimos os dados pessoais do novo aluno para a adição.  
-![IMAGEM ADD ALUNOS](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.02.13.png)
-
-4. Ao inserir corretamente os dados, uma mensagem de sucesso será exibida e seu novo aluno estará disponível na listagem de alunos.  
-![IMAGEM ](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.02.52.png)
-
-5. Em amarelo vemos o novo aluno inserido. 
-6. Para a adição de outros campos, o sistema é muito parecido mudando apenas os dados para a adição.
-7. Para Professores por exemplo, vamos na aba `Professores` sinalizado em vermelho.  
-![IMAGEM ](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.03.04.png)
-
-8. Inserimos os dados e adicionamos.  
-![IMAGEM NOVO PROFESSOR](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.03.48.png)
-
-9. Mesma ideia para `Disciplinas` e outros. Sendo assim intuitivo e similar em simplicidade.    
-![IMAGEM NOVA DISCIPLINA](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.04.35.png)
-
-
 # 📖 Manual do Usuário - SIGA
 
 Bem-vindo ao **SIGA (Sistema Integrado de Gestão Acadêmica)**.  
@@ -302,6 +276,31 @@ Confirme se o backend está rodando e se a porta **8080** está livre.
 Verifique se o arquivo `sigaDB.mv.db` está presente na pasta **dados/** do projeto.
 
 ---
+
+# 📂 Exemplo de Cadastro de Novo Aluno
+
+1. Na nossa página inicial, escolhemos ao lado esquerdo a opção `Alunos`.  
+![IMAGEM HOME PAGE](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.09.25.png)
+
+2. Dentro da página de Alunos, escolhemos ao canto sinalizado em vermelho para adicionar um novo aluno.   
+![IMAGEM HOME ALUNOS](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.01.52.png)
+
+3. No modal exibido, inserimos os dados pessoais do novo aluno para a adição.  
+![IMAGEM ADD ALUNOS](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.02.13.png)
+
+4. Ao inserir corretamente os dados, uma mensagem de sucesso será exibida e seu novo aluno estará disponível na listagem de alunos.  
+![IMAGEM ](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.02.52.png)
+
+5. Em amarelo vemos o novo aluno inserido. 
+6. Para a adição de outros campos, o sistema é muito parecido mudando apenas os dados para a adição.
+7. Para Professores por exemplo, vamos na aba `Professores` sinalizado em vermelho.  
+![IMAGEM ](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.03.04.png)
+
+8. Inserimos os dados e adicionamos.  
+![IMAGEM NOVO PROFESSOR](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.03.48.png)
+
+9. Mesma ideia para `Disciplinas` e outros. Sendo assim intuitivo e similar em simplicidade.    
+![IMAGEM NOVA DISCIPLINA](https://github.com/vinicius-emanuelds/bugs-life/blob/main/poo/siga/imgs/Captura%20de%20Tela%202025-11-30%20às%2019.04.35.png)
 
 ## 👨‍💻 Suporte Técnico
 
