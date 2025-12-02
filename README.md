@@ -72,6 +72,13 @@ Linux / Mac:
 ./mvnw spring-boot:run
 ```
 
+**Linux / Mac:**
+Caso tenha erro de permissão ("permission denied"), rode o comando de liberação primeiro:
+```sh
+chmod +x mvnw
+./mvnw spring-boot:run
+```
+
 ### 3. Acessar
 
 - Sistema Web: http://localhost:8080
@@ -307,4 +314,33 @@ Para dúvidas avançadas, entre em contato com a equipe de desenvolvimento:
 
 ---
 
-## BACKLOG ---
+## 📝 Backlog do Projeto (Histórico de Implementação)
+Esta seção lista todas as tarefas planejadas e realizadas ao longo do desenvolvimento do SIGA.
+
+```markdown
+| ID   | Tarefa                                                                    | Módulo       | Prioridade | Status        |
+|------|---------------------------------------------------------------------------|--------------|------------|---------------|
+| B01  | Definir escopo, requisitos e arquitetura MVC                              | Planejamento | Alta       | Concluído     |
+| B02  | Especificar modelo de dados (Aluno, Prof, Turma, Disc, Matrícula)         | Planejamento | Alta       | Concluído     |
+| B03  | Criar projeto Spring Boot e configurar dependências (JPA, Web, H2)        | Setup        | Alta       | Concluído     |
+| B04  | Criar entidade Aluno e AlunoRepository                                    | Aluno        | Alta       | Concluído     |
+| B05  | Implementar AlunoController (CRUD completo)                               | Aluno        | Alta       | Concluído     |
+| B06  | Implementar funcionalidade de Histórico Escolar (JSON)                    | Aluno        | Média      | Concluído     |
+| B07  | Criar entidade Professor e ProfessorRepository                            | Professor    | Média      | Concluído     |
+| B08  | Implementar ProfessorController (CRUD completo)                           | Professor    | Média      | Concluído     |
+| B09  | Criar entidade Disciplina e DisciplinaRepository                          | Disciplina   | Média      | Concluído     |
+| B10  | Implementar DisciplinaController (CRUD completo)                          | Disciplina   | Média      | Concluído     |
+| B11  | Criar entidade Turma e TurmaRepository                                    | Turma        | Alta       | Concluído     |
+| B12  | Implementar TurmaController (Vínculo Prof + Disc)                         | Turma        | Alta       | Concluído     |
+| B13  | Criar entidade Matrícula (Aluno + Turma) e Repository                     | Matrícula    | Alta       | Concluído     |
+| B14  | Implementar endpoint de Matrícula (Criar vínculo)                         | Matrícula    | Alta       | Concluído     |
+| B15  | Implementar lançamento de Notas (P1, P2, P3) e cálculo de média           | Notas        | Alta       | Concluído     |
+| B16  | Desenvolver telas Frontend com Thymeleaf (Home e Cadastros)               | Frontend     | Média      | Concluído     |
+| B17  | Configurar Documentação Automática (Swagger UI)                           | Infra        | Alta       | Concluído     |
+| B18  | Configurar persistência de dados em arquivo (H2)                          | Infra        | Alta       | Concluído     |
+```
+
+## 🙏 Agradecimentos
+Agradecemos ao professor responsável pela disciplina, aos colegas e a todos que contribuíram direta ou indiretamente para a construção deste sistema.
+## 👨‍💻 Equipe
+Marcelo Manara • Marcelo Belloto • Vinícius Emanuel • Lucas Vieira
