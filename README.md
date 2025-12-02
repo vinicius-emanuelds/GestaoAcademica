@@ -1,20 +1,24 @@
 # SIGA - Sistema Integrado de Gestão Acadêmica 📚
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%23005F0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white) ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
-### Projeto da Disciplina: Programação Orientada a Objetos  
-### Tema Escolhido: Aplicação RESTful com Spring Boot  
-### Professor: Maromo
+> **Disciplina:** Programação Orientada a Objetos  
+> **Tema:** Aplicação RESTful com Spring Boot  
+> **Professor:** Marcos Roberto de Moraes (Maromo)
 
-O **SIGA** é uma aplicação web **Fullstack** (Backend API + Frontend Thymeleaf) desenvolvida para atender aos requisitos da avaliação prática.  
-O sistema implementa uma **API RESTful completa** para a gestão escolar, cobrindo operações CRUD para múltiplas entidades.
+O **SIGA** é uma aplicação web **Fullstack** (Backend API + Frontend Thymeleaf) desenvolvida para a gestão escolar. O sistema implementa uma **API RESTful completa**, cobrindo operações CRUD para múltiplas entidades (Alunos, Professores, Turmas, Disciplinas e Notas).
+
+---
+## 👨‍💻  Equipe de Desenvolvimento
+[Lucas Vieira](https://github.com/Lucas-WBB) •  [Marcelo Belloto](https://github.com/marcelo-belotto) •  [Marcelo Manara](https://github.com/ManaraMarcelo) • [Vinícius Emanuel](https://github.com/vinicius-emanuelds)
 
 ---
 
 ## 🎯 Objetivos do Projeto
 
-- **API RESTful:** Implementação seguindo padrões REST.  
-- **CRUD Completo:** Alunos, Professores, Turmas e Disciplinas.  
-- **Documentação Automática:** Swagger/OpenAPI integrado.  
-- **Arquitetura MVC:** Modelo, Visão e Controle bem definidos.
+- **API RESTful:** Implementação seguindo as melhores práticas e verbos HTTP.
+- **CRUD Completo:** Gestão integral de entidades acadêmicas.
+- **Documentação Automática:** Swagger/OpenAPI integrado para testes e visualização.
+- **Arquitetura MVC:** Separação clara entre Modelo, Visão e Controle.
 
 ---
 
@@ -25,40 +29,32 @@ O sistema implementa uma **API RESTful completa** para a gestão escolar, cobrin
   - Spring Web  
   - Spring Data JPA  
   - Thymeleaf  
-  - Validation  
-- **H2 Database**  
-- **SpringDoc OpenAPI**  
-- **Lombok**  
-- **Maven (Wrapper incluído)**  
+  - Validation
+- **Frontend:** Thymeleaf + Bootstrap (via CDN)
+- **Banco de Dados:** H2 Database (Modo Arquivo)
+- **Documentação:** SpringDoc OpenAPI (Swagger UI)
+- **Ferramentas:** Maven, Git
 
 ---
+## 🛠️ Instalação e Execução
 
-## 👥 Equipe de Desenvolvimento
-
-- [Lucas Vieira](https://github.com/Lucas-WBB) 
-- [Marcelo Belloto](https://github.com/marcelo-belotto) 
-- [Marcelo Manara](https://github.com/ManaraMarcelo)
-- [Vinícius Emanuel](https://github.com/vinicius-emanuelds) 
-
----
-
-## 🛠️ Pré-requisitos
+### Pré-requisitos
 
 - **JDK 21 instalado**  
 - **Git (opcional)**  
 - O projeto inclui **Maven Wrapper (mvnw)**, dispensando instalação manual.
 
----
 
-## ▶️ Guia de Instalação e Execução
 
-### 1. Clonar o Repositório
+### ▶️ Passo a Passo
+
+#### 1. Clonar o Repositório
 
 ```sh
 git clone https://github.com/vinicius-emanuelds/GestaoAcademica.git
 ```
 
-### 2. Rodar a Aplicação
+#### 2. Rodar a Aplicação
 
 No terminal, dentro da pasta do projeto:
 
@@ -79,19 +75,17 @@ chmod +x mvnw
 ./mvnw spring-boot:run
 ```
 
-### 3. Acessar
-
+#### 3. Acessar
+Acessar
 - Sistema Web: http://localhost:8080
-
-- Documentação da API (Swagger): http://localhost:8080/swagger-ui/index.html
+- Swagger UI: http://localhost:8080/swagger-ui/index.html
+- Banco H2: http://localhost:8080/h2-console
 
 ---
 
-# 📚 Estrutura da API (Endpoints)
-
-A API fornece recursos para manipulação das principais entidades escolares. Abaixo, um resumo dos principais endpoints disponíveis:
-
 ## 📚 Estrutura da API (Endpoints)
+
+A API fornece recursos para manipulação das principais entidades escolares. Abaixo, um resumo dos principais endpoints disponíveis. Para detalhes completos, consulte a documentação Swagger.
 
 | Método | Endpoint                     | Descrição                           |
 |--------|------------------------------|-------------------------------------|
@@ -106,15 +100,16 @@ A API fornece recursos para manipulação das principais entidades escolares. Ab
 | GET    | `/api/matriculas`            | Lista todas as matrículas           |
 | PUT    | `/api/matriculas/{id}/notas` | Atualiza as notas de um aluno       |
 
-Dica: Para testar as requisições (POST, PUT, DELETE) diretamente, utilize a interface do Swagger mencionada acima.
+> ⚠️ Dica: Para testar as requisições (POST, PUT, DELETE) diretamente, utilize a interface do Swagger.
 
 
-# 🗄️ Persistência de Dados (H2)
+# 🗄️ Configuração do Banco de Dados (H2)
 
 Para cumprir o requisito de persistência sem complicar o ambiente de desenvolvimento, utilizamos o H2 em modo arquivo.
 
+> Console de Gerenciamento: http://localhost:8080/h2-console
+
 - URL JDBC: ```jdbc:h2:file:./dados/sigaDB```
-- Console de Gerenciamento: http://localhost:8080/h2-console
 - User: ```sa```
 - Password: ```(vazio)```
 
@@ -131,6 +126,7 @@ com.poo.siga
 ```
 
 # 📖 Manual do Usuário - SIGA
+<details> <summary><strong>Clique para expandir o Manual Completo</strong></summary>
 
 Bem-vindo ao **SIGA (Sistema Integrado de Gestão Acadêmica)**.  
 Este manual guiará você pelas principais funcionalidades do sistema, desde o cadastro básico até o lançamento de notas.
@@ -340,6 +336,7 @@ Esta seção lista todas as tarefas planejadas e realizadas ao longo do desenvol
 ```
 
 ## 🙏 Agradecimentos
-Agradecemos ao professor responsável pela disciplina, aos colegas e a todos que contribuíram direta ou indiretamente para a construção deste sistema.
-## 👨‍💻 Equipe
-Marcelo Manara • Marcelo Belloto • Vinícius Emanuel • Lucas Vieira
+Este projeto é o resultado de muito trabalho em equipe e aprendizado contínuo. Nossos agradecimentos vão para:
+* **Ao Prof. Maromo:** Pela mentoria técnica e por nos desafiar aula após aula.
+* **À Equipe de Desenvolvimento:** Pela parceria na integração entre Backend (Spring Boot) e Frontend, superando desafios técnicos juntos.
+
