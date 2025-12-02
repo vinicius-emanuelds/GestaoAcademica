@@ -302,14 +302,13 @@ Verifique se o arquivo `sigaDB.mv.db` está presente na pasta **dados/** do proj
 
 Para dúvidas avançadas, entre em contato com a equipe de desenvolvimento:
 
-- **Marcelo Manara**  
-- **Marcelo Belloto**  
-- **Vinícius Emanuel**  
-- **Lucas Vieira**
+[Lucas Vieira](https://github.com/Lucas-WBB) •  [Marcelo Belloto](https://github.com/marcelo-belotto) •  [Marcelo Manara](https://github.com/ManaraMarcelo) • [Vinícius Emanuel](https://github.com/vinicius-emanuelds)
+
+</details>
 
 ---
 
-## 📝 Backlog do Projeto (Histórico de Implementação)
+# 📝 Backlog do Projeto (Histórico de Implementação)
 Esta seção lista todas as tarefas planejadas e realizadas ao longo do desenvolvimento do SIGA.
 
 ```markdown
@@ -335,8 +334,9 @@ Esta seção lista todas as tarefas planejadas e realizadas ao longo do desenvol
 | B18  | Configurar persistência de dados em arquivo (H2)                          | Infra        | Alta       | Concluído     |
 ```
 
+---
+
 ## 🙏 Agradecimentos
 Este projeto é o resultado de muito trabalho em equipe e aprendizado contínuo. Nossos agradecimentos vão para:
 * **Ao Prof. Maromo:** Pela mentoria técnica e por nos desafiar aula após aula.
 * **À Equipe de Desenvolvimento:** Pela parceria na integração entre Backend (Spring Boot) e Frontend, superando desafios técnicos juntos.
-
